@@ -12,7 +12,7 @@ class ESP32Controller(Controller):
     PIN_ID_MOSI = 27
     PIN_ID_MISO = 19
 
-    PIN_ID_FOR_LORA_DIO0 = 5
+    PIN_ID_FOR_LORA_DIO0 = 26
     PIN_ID_FOR_LORA_DIO1 = None
     PIN_ID_FOR_LORA_DIO2 = None
     PIN_ID_FOR_LORA_DIO3 = None
