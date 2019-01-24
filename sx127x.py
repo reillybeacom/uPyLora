@@ -65,7 +65,7 @@ class SX127x:
 
     def __init__(self,
                  name = 'SX127x',
-                 parameters = {'frequency': 868E6, 'tx_power_level': 2, 'signal_bandwidth': 125E3,
+                 parameters = {'frequency': 915E6, 'tx_power_level': 2, 'signal_bandwidth': 125E3,
                                'spreading_factor': 8, 'coding_rate': 5, 'preamble_length': 8,
                                'implicitHeader': False, 'sync_word': 0x12, 'enable_CRC': False},
                  onReceive = None):
@@ -90,7 +90,7 @@ class SX127x:
             if(version != 0):
                 init_try = False;
         if version != 0x12:
-            raise Exception('Invalid version.')
+            print('Warning: unsupported sx127x version!')
 
         # put in LoRa and sleep mode
         self.sleep()

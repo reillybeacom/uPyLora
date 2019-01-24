@@ -1,0 +1,11 @@
+open ttyUSB0
+
+put config_lora.py
+put controller_esp32.py
+put controller.py
+put LoRaDuplexCallback.py
+put LoRaPingPong.py
+put LoRaReceiver.py
+put LoRaSender.py
+put main.py
+put sx127x.py
